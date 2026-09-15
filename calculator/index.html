@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kalkulator Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <div class="kalkulator">
+        <input type="text" id="display" disabled>
+
+            <div class="keys">
+                <button class="hapus" onclick="hapusHasil()">C</button>
+                <button class="bagi" onclick="munculDiDisplay('/')">/</button>
+                <button class="kali" onclick="munculDiDisplay('*')">x</button>
+
+                <button onclick="munculDiDisplay('7')">7</button>
+                <button onclick="munculDiDisplay('8')">8</button>
+                <button onclick="munculDiDisplay('9')">9</button>
+                <button class="tambah" onclick="munculDiDisplay('+')">+</button>
+                
+                <button onclick="munculDiDisplay('4')">4</button>
+                <button onclick="munculDiDisplay('5')">5</button>
+                <button onclick="munculDiDisplay('6')">6</button>
+                <button class="kurang" onclick="munculDiDisplay('-')">-</button>
+
+                <button onclick="munculDiDisplay('1')">1</button>
+                <button onclick="munculDiDisplay('2')">2</button>
+                <button onclick="munculDiDisplay('3')">3</button>
+                <button onclick="munculDiDisplay('.')">.</button>
+
+                <button onclick="munculDiDisplay('0')">0</button>
+                <button class="equal" onclick="hasil()">=</button>
+            </div>
+      </div>      
+      <script src="script.js"></script>
+</body>
+</html>
